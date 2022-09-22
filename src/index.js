@@ -104,10 +104,10 @@ export function Carousel(props) {
           if (
             document.getElementsByClassName("slider-single active").length > 0
           ) {
-            const height = document.getElementsByClassName(
+            const h = document.getElementsByClassName(
               "slider-single active"
-            )[0].clientHeight;
-            setHeight(`${height}px`);
+            )[0]?.clientHeight;
+            setHeight(`${h}px`);
           }
         }, 500);
       }
@@ -166,10 +166,10 @@ export function Carousel(props) {
           if (
             document.getElementsByClassName("slider-single active").length > 0
           ) {
-            const height = document.getElementsByClassName(
+            const h = document.getElementsByClassName(
               "slider-single active"
-            )[0].clientHeight;
-            setHeight(`${height}px`);
+            )[0]?.clientHeight;
+            setHeight(`${h}px`);
           }
         }, 500);
       }
