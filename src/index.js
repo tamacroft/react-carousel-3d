@@ -217,7 +217,7 @@ export function Carousel(props) {
   };
 
   return (
-    <div className="">
+    <div>
       <div className="react-3d-carousel" style={{ height }} {...handlers}>
         {slides && slides.length > 0 && (
           <div className="slider-container">
@@ -248,7 +248,7 @@ export function Carousel(props) {
       </div>
 
       <div className="containerIndicator">
-        {height !== "0px" &&
+        {
           slides.map((_, index) => (
             <div
               className={
